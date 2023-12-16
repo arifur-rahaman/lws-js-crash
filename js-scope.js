@@ -15,7 +15,7 @@ function learn(topic) {
   /***** Lesson 2: var,let and const ******/
   //let: blocked scoped; can not redeclare; can re-assign
   // var: function scoped; can redeclare and re-assign;  even global varialbe by var is limited to main() function
-  // const: can not re-decalre and can not re-assign;
+  // const: can not re-decalre and can not re-assign; but we can modify object or array property value;
 
   if (true) {
     let ant = 5; // {....} is a block; 2 steps done here - first declared ant and 2nd assigned ant to 5
@@ -25,13 +25,6 @@ function learn(topic) {
     var aunt = 7;
     var aunt = 8; // by var we can redeclare and re assign
     console.log("var: " + aunt);
-    // const obj = {
-    //   white: 5,
-    // };
-    // obj = {
-    //   red: 10,
-    // };
-    // console.log(obj);
   }
   // console.log(ant); // we can not access "ant" from outside if {} block for decalaration by let
 
@@ -43,7 +36,7 @@ function learn(topic) {
     //obj = { // we can not redeclare by const or re-assign but we can modify object property element
     //  yellow: 10,
     //};
-    obj.white = 9; // but we can re-assign the object property value by dot notation
+    obj.white = 9; // but we can change or muted the object property value by dot notation
     console.log("Printing new object: ", obj);
   }
 }
