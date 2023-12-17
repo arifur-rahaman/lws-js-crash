@@ -71,5 +71,5 @@
 //   return () => {
 //     console.log("This is anonymous func from another func");
 //   };
-// here we call hello(), it will return this anonymous function
+// here when we call hello(), it will return this anonymous function from inside
 // }
