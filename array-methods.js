@@ -50,16 +50,39 @@ console.log("slice method: " + sliceResult);
 // most importantly it changes original array.
 // because it changes the original array. it is best practice to make a copy of main array;
 // const spliceResult = fruits.splice(index, noOfRemovingItems, newItem1, newItem2, newItem3);
-// const spliceResult = fruits.splice(1, 3, "newItem1", "newItem2", "newItem3");
+const spliceResult = fruits.splice(1, 3, "newItem1", "newItem2", "newItem3");
 // console.log("splice result: " + spliceResult);
 // console.log(fruits + " after splice");
 
 /**concat() method */
-// const concatResult = fruits.concat("musambi", "grape", "lichi");
-// console.log("concat method: " + concatResult);
-// console.log(fruits);
+const concatResult = fruits.concat("musambi", "grape", "lichi");
+console.log("concat method: " + concatResult);
+// console.log(fruits); //it does not change original array
 
 /**push() method */
-const pushResult = fruits.push("musambi", "grape", "lichi");
+const pushResult = fruits.push("musambi", "grape", "lichi", "grape");
 console.log("push method: " + pushResult); // push returns array length after push();
 console.log(fruits); // it changes original array with new element
+
+/**map() method */
+// map() can transform the array and we can use serve our that transformed array but keeping original array as original;
+const mapResult = fruits.map((fruit) => {
+  if (fruit === "grape") {
+    return "grape";
+  } else {
+    return "N/A";
+  }
+});
+
+//alternative of map() is lengthy process:
+// const array = [];
+// for (let i = 0; i <= fruits.length; i++) {
+//   if (fruits[i] === "grape") {
+//     array.push("grape");
+//   } else {
+//     array.push("N/A");
+//   }
+// }
+// console.log(array);
+console.log(mapResult);
+console.log(fruits); // map() does not change original array
