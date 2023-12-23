@@ -66,13 +66,15 @@ console.log(fruits); // it changes original array with new element
 
 /**map() method */
 // map() can transform the array and we can use serve our that transformed array but keeping original array as original;
-const mapResult = fruits.map((fruit) => {
-  if (fruit === "grape") {
-    return "grape";
-  } else {
-    return "N/A";
-  }
-});
+// const mapResult = fruits.map((fruit) => {
+//   if (fruit === "grape") {
+//     return "grape";
+//   } else {
+//     return "N/A";
+//   }
+// });
+
+const mapResult = fruits.map((f) => `${f} !!!`);
 
 //alternative of map() is lengthy process:
 // const array = [];
@@ -86,3 +88,60 @@ const mapResult = fruits.map((fruit) => {
 // console.log(array);
 console.log(mapResult);
 console.log(fruits); // map() does not change original array
+
+/**reduce() method */
+// we use reduce() when we need to get one result of lots of numbers from array like cumulative sum
+const numbers = [2, 4, 6, 10];
+const reduceResult = numbers.reduce((cumulitativeTotal, currentValue) => {
+  // cumTotal is 0+2 and currentValue is 6, then cumtotal is 6 and currentvalue is 12
+  return cumulitativeTotal + currentValue;
+}, 0); // 0 is the default cumulitativeTotal;
+console.log(reduceResult);
+
+/**forEach method */
+//it is for array
+const forEachResult = fruits.forEach((f) => {
+  if (f != NaN) {
+    // console.log("not a number");
+  }
+});
+
+/**forOf method */
+// aplicable only in iterable; means array and string because they have index but not over objects
+// over number of array
+for (number of numbers) {
+  console.log(number);
+}
+
+//over strings
+const names = "arifur Rahaman";
+for (n of names) {
+  console.log(n);
+}
+
+/**forIn method */
+// applicable for objects only
+const language = {
+  name: "JavaScript",
+  year: 1995,
+  creator: "Brendan Eich",
+};
+
+// to print key
+for (key in language) {
+  console.log(key);
+}
+/**  output:
+ * name
+ * year
+ * creator */
+
+// to print value
+for (key in language) {
+  console.log(language[key]);
+}
+/** Output:
+ * JavaScript
+ * 1995
+ * Brendan Eich
+ */
