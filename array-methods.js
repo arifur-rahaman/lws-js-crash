@@ -3,11 +3,14 @@
  * 2. find()
  * 3. findIndex()
  * 3. map()
- * 4. reduce()
+ * 4. reduce():  to calculate all numbers of a array
  * 5. slice()
  * 6. splice()
  * 7. concat(): to add new element at the end; does not change the original array;
  * 8. push(): to add new element at the end; changes the original array;
+ * 9. forEach
+ * 10. forIn: this is for not iterable (Objects)
+ * 11. forOf: this is for iterable(array, string)
  */
 const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 
@@ -145,3 +148,5 @@ for (key in language) {
  * 1995
  * Brendan Eich
  */
+
+//1.04 hours
