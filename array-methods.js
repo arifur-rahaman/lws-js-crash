@@ -15,13 +15,14 @@
 const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
 
 /**find() method */
-// const result = fruits.find((f) => f === "Lemon");
+// const result = fruits.find((f) => f === "Lemon"); //single element
 const findResult = fruits.find((f) => f === "Lemon" || f === "Apple"); // will return the first condition element only
 // we have to put a call back function
 // basically this runs a loop and will go through each element
 // needs a parameter, this will bring each element and compare,
 // if condition true then it will return that element
 console.log("find-method: " + findResult);
+console.log("main array after find method " + fruits);
 
 /**findIndex() method */
 // const findIndexResult = fruits.findIndex((fruit) => fruit === "Mango");
@@ -148,5 +149,3 @@ for (key in language) {
  * 1995
  * Brendan Eich
  */
-
-//1.04 hours
