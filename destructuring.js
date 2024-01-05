@@ -22,7 +22,7 @@ console.log(
   "Education: " + userEducation
 );
 
-// destructuring:
+// destructuring: we can avoid code repition
 //const {key name1, key name2}= object name;
 const { name, age } = user;
 console.log(name, age);
