@@ -40,3 +40,11 @@ console.log(sex);
 // getting data from  more nested complex object;
 const { education: { school: { scl_name } } = {} } = user; // here we have to use another {scl_name}
 console.log(scl_name);
+
+// function Students(props) {
+//   const { name, id, roll } = props;
+// }
+// or we can directly do this
+// function Students({ name, id, roll }) {
+//   return null;
+// }
