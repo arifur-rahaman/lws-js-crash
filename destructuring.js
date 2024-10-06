@@ -41,6 +41,7 @@ console.log(sex);
 const { education: { school: { scl_name } } = {} } = user; // here we have to use another {scl_name}
 console.log(scl_name);
 
+// Destructuring in react
 // function Students(props) {
 //   const { name, id, roll } = props;
 // }
