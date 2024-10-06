@@ -49,3 +49,6 @@ console.log(scl_name);
 // function Students({ name, id, roll }) {
 //   return null;
 // }
+
+// taking all props by ...rest like ...props
+//
